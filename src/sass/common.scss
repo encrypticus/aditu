@@ -1,0 +1,8 @@
+@include load-font($src: '../fonts/BebasNeue', $family: 'Bebas Neue');
+
+html {
+  font-size: 16px;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: $color-primary;
+}
+
