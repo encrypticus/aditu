@@ -1,0 +1,16 @@
+.basket {
+  display: flex;
+
+  &__price {
+    margin-left: 17px;
+    margin-top: 5px;
+    font-size: 2.0625rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: $color-basket-price;
+    font-weight: 400;
+  }
+
+  &__icon {
+    margin-bottom: 5px;
+  }
+}
