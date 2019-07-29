@@ -1,0 +1,20 @@
+-
+  var items = [
+  'Home',
+  'Sale',
+  'Handbags',
+  'Wallets',
+  'Accessories',
+  'Mens store',
+  'Shoes',
+  'Vintage',
+  'Services',
+  'Contact us'
+  ]
+
+nav.main-menu
+  .main-menu__nav
+    each item, index in items
+      a.main-menu__link(href="/")= item
+      if index !== items.length - 1
+        .main-menu__decor

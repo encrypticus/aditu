@@ -11,9 +11,9 @@
     box-sizing: border-box;
     outline: none;
     padding: {
-      top: 8px;
-      right: 30px;
-      bottom: 8px;
+      top: .5rem; // 8px / 16px;
+      right: 1.875rem; // 30px / 16px
+      bottom: .5rem; // 8px / 16px
     }
 
     &:active,

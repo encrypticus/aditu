@@ -18,5 +18,13 @@ body {
   min-width: 320px;
   margin: auto;
   margin-top: 50px;
+  box-sizing: border-box;
+
+  @include for-tablet-landscape-down() {
+    padding: {
+      right: 5px;
+      left: 5px;
+    }
+  }
 }
 

@@ -1,9 +1,8 @@
 .page-header {
-  padding: 0 10px;
 
   &__wrapper {
     display: flex;
-    padding: 15px 0;
+    padding: .9375rem 0; // 15px / 16px
     align-items: center;
 
     @include for-tablet-landscape-down() {
@@ -16,7 +15,7 @@
   }
 
   &__logo {
-    margin-left: 11.196875%;
+    margin-left: 11.796875%;
     margin-top: 5px;
 
     @include for-tablet-landscape-down() {
@@ -29,8 +28,8 @@
   }
 
   &__search-form {
-    width: 34.50625%;
-    margin-left: 13.58125%;
+    width: 34.10625%;
+    margin-left: 13.28125%;
 
     @include for-tablet-landscape-down() {
       margin-left: 0;
@@ -43,7 +42,7 @@
   }
 
   &__basket {
-    margin-left: 12.34375%;
+    margin-left: 12.14375%;
 
     @include for-tablet-landscape-down() {
       margin-left: 0;
