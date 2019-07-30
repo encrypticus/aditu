@@ -1,10 +1,16 @@
 @include load-font($src: '../fonts/BebasNeue', $family: 'Bebas Neue');
 
+@include load-font($src: '../fonts/OpenSans', $family: 'Open Sans');
+
 html {
   font-size: 16px;
   font-family: 'Bebas Neue', Arial, sans-serif;
   color: $color-primary;
   background-color: $color-primary;
+
+  @include for-phone-only() {
+    font-size: 14px;
+  }
 }
 
 body {

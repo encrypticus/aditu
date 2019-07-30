@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока button, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.button {
+  display: inline-block;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: $color-primary;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $color-footer-bottom;
+  }
+
+  &:active {
+    color: $gray--lightest;
+  }
+
+  &_banner {
+    font-size: 1.6875rem;
+    line-height: 19px;
+    border: .1875rem solid $color-primary; // 3px / 16px
+    border-radius: 8px;
+    background-color: transparent;
+    padding: {
+      top: .625rem; // 10px / 16px
+      right: 1.5625rem; // 25px / 16px
+      bottom: .6875rem; // 11px / 16px
+      left: 1.5625rem; // 25px / 16px
+    }
+  }
+}

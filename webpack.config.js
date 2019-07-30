@@ -11,7 +11,6 @@ const htmlWebpackPlugin = require('./webpack/plugins/htmlWebpackPlugin');// мо
 const cleanWebpackPlugin = require('./webpack/plugins/cleanWebpackPlugin'); // модуль очищает папку сборки перед пересборкой
 const styleLintPlugin = require('./webpack/plugins/styleLintPlugin'); // линтер стилевых файлов
 const browserSync = require('./webpack/plugins/browserSyncPlugin'); // в комментариях не нуждается
-const jquery = require('./webpack/plugins/jquery'); // плагин, добавляющий jquery в проект
 const css = require('./webpack/loaders/css'); // модуль обработки css-файлов
 const image = require('./webpack/loaders/image'); // модуль обработки файлов изображений
 const video = require('./webpack/loaders/video'); // модуль обработки видеофайлов
@@ -61,8 +60,7 @@ module.exports = (env, args) => {
       copyWebpackPlugin([{from: 'src/favicons', to: 'favicons'}]),
       htmlWebpackPlugin({filename: 'index.html', template: 'src/pages/index.pug', inject: false}),
       styleLintPlugin(),
-      env.browserSync === 'open' ? browserSync() : {},
-      jquery()
+      env.browserSync === 'open' ? browserSync() : {}
   );
 
   if (isDev) { // в режиме разработки
