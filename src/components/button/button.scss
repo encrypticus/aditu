@@ -4,6 +4,7 @@
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   font-family: 'Bebas Neue', Arial, sans-serif;
   color: $color-primary;
   font-weight: 400;
@@ -12,6 +13,7 @@
   vertical-align: middle;
   text-decoration: none;
   transition: background-color .3s;
+  border: none;
 
   &:hover {
     background-color: $color-footer-bottom;
@@ -32,6 +34,18 @@
       right: 1.5625rem; // 25px / 16px
       bottom: .6875rem; // 11px / 16px
       left: 1.5625rem; // 25px / 16px
+    }
+  }
+
+  &_slide {
+    font-size: 19px;
+    background-color: $color-button;
+    border-radius: 4px;
+    padding: {
+      top: 4px;
+      right: 15px;
+      bottom: 4px;
+      left: 14px;
     }
   }
 }

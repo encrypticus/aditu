@@ -1,0 +1,6 @@
+mixin slide ({img = "", text = "Slide text"} = {})
+  .slide
+    img.slide__img(src=img, alt="slide")
+    p.slide__text= text
+      span.slide__button
+        +button("Shop", 'slide')

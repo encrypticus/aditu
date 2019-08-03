@@ -1,0 +1,21 @@
+mixin slider-button(direction = "left")
+  button.slider__button(class= direction === "left" ? "slider__button_left" : "slider__button_right")
+    if (direction === "left")
+      <svg xmlns="http://www.w3.org/2000/svg" width="29" height="88" viewBox="0 0 29 88"><g><g><path fill="#dbdbdb" d="M.658 43.93l-.669-.438L27.87.007l.669.438zm-.345.23l.672-.442L29.01 87.551l-.672.441z"/></g></g></svg>
+    else if (direction === "right")
+      <svg xmlns="http://www.w3.org/2000/svg" width="29" height="88" viewBox="0 0 29 88"><g><g><path fill="#dbdbdb" d="M.462.445l.669-.438 27.88 43.485-.669.438zm.2 87.547l-.673-.441 28.026-43.833.672.442z"/></g></g></svg>
+
+section.slider
+  +slider-button
+  .slider__slides-wrapper
+    .slider__slides
+      +slide({img: "../img/wear1.png", text: "Branded shoes"})
+      +slide({img: "../img/wear2.png", text: "Branded tshirts"})
+      +slide({img: "../img/wear3.png", text: "Branded shoes"})
+      +slide({img: "../img/wear1.png", text: "Branded shoes"})
+      +slide({img: "../img/wear2.png", text: "Branded tshirts"})
+      +slide({img: "../img/wear3.png", text: "Branded shoes"})
+      +slide({img: "../img/wear1.png", text: "Branded shoes"})
+      +slide({img: "../img/wear2.png", text: "Branded tshirts"})
+      +slide({img: "../img/wear3.png", text: "Branded shoes"})
+  +slider-button("right")

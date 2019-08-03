@@ -1,5 +1,3 @@
-import './hammer';
-
 const banner = document.querySelector('.banner');
 const toggles = banner.querySelectorAll('.banner__toggle');
 const slides = banner.querySelector('.banner__slides');
