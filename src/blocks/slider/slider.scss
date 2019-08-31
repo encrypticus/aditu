@@ -4,7 +4,8 @@
   background-color: $color-primary;
   padding: {
     top: 1.3125rem; //  21px / 16px
-    bottom: 2.0625rem; // 33px / 16px
+    //bottom: 2.0625rem; // 33px / 16px
+    bottom: 1rem;
   }
 
   &__slides-wrapper {
