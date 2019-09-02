@@ -2,6 +2,8 @@
 
 @import 'mixins';
 
+@import 'functions.scss';
+
 @import 'common';
 
 @import '../blocks/header/header';
@@ -25,3 +27,5 @@
 @import '../blocks/main/main';
 
 @import '../blocks/products/products';
+
+@import '../components/product-card/prodcut-card';

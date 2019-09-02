@@ -1,0 +1,8 @@
+mixin product-card({ src = "../img/wear4.png", imgAlt = "product", description = "Product name", price = 50, title = false } = {})
+  .product-card
+    img.product-card__img(src=src, alt=productAlt, title= title ? title : null)
+    .product-card__description= description
+    .product-card__footer
+      span.product-card__price= `$${price}`
+      .product-card__button
+        +button("By now", "card")

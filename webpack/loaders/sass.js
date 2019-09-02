@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // обрабатывает scss|sass
 const autoprefixer = require('autoprefixer');
+const pxtorem = require('postcss-pxtorem');
 
 /**
  * Обрабатывает sass|scss-модули
@@ -29,7 +30,7 @@ module.exports = function (loadMap) {
             {
               loader: 'postcss-loader',
               options: {
-                plugins: () => [autoprefixer()]
+                plugins: () => [autoprefixer(), pxtorem()]
               }
             },
             {

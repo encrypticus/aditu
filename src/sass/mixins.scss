@@ -13,6 +13,21 @@
   }
 }
 
+// Конвертирует размер шрифта из px в rem
+@mixin fontSizeToRem($targetValue, $rootValue: 16) {
+  font-size: $targetValue / $rootValue + rem;
+}
+
+// Конвертирует размер указанного свойства из px в rem
+@mixin pxToRem($propName, $targetValue, $rootValue: 16) {
+  #{$propName}: $targetValue / $rootValue + rem;
+}
+
+// Конвертирует размер указанного свойства из px в %
+@mixin pxToPercent($propName, $targetValue, $parentValue) {
+  #{$propName}: $targetValue / $parentValue * 100%;
+}
+
 // Mobile breakpoints
 @mixin for-small-phone-only() {
   @media (max-width: 320px) {

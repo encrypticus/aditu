@@ -1,0 +1,9 @@
+// Конвертирует px в rem
+@function pxToRem($target, $context: 16) {
+  @return ($target / $context) + rem;
+}
+
+// Конвертирует px в %
+@function pxToPercent($target, $context) {
+  @return ($target / $context) * 100%;
+}

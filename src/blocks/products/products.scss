@@ -1,22 +1,37 @@
 .products {
 
+  &__card-wrapper {
+    width: pxToPercent(873, 1280);
+    margin: auto;
+  }
+
+  &__card-wrapper-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: pxToRem(-13);
+  }
+
   &__title {
     margin: 0;
-    font-size: 1.9375rem; // 31px / 16px
-    line-height: 25px;
+    font-size: pxToRem(31);
     background-color: $color-nav-bar;
     background-image: url('../img/bg.jpg');
     font-weight: 400;
 
+    @include pxToRem(margin-bottom, 48);
+
+    @include pxToRem(line-height, 25);
 
     @include for-tablet-landscape-down() {
       padding-left: 0;
       text-align: center;
     }
     padding: {
-      top: 1.5rem; // 24px / 16px
-      bottom: 1.125rem; // 18px / 16px
-      left: 14.453125%; // 185px / 1280px
+      top: pxToRem(24);
+      bottom: pxToRem(18);
+      left: pxToPercent(185, 1280)
     }
   }
 }
