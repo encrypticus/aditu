@@ -46,16 +46,16 @@
   }
 
   &_card {
-    font-size: 20px;
+    font-size: pxToRem(20);
     line-height: 20.19px;
     border-radius: 4px;
     background-color: $color-button;
-    letter-spacing: 1.5px;
+    letter-spacing: pxToRem(1.5);
     padding: {
-      top: 9px;
-      right: 9px;
-      bottom: 6px;
-      left: 10px;
+      top: pxToRem(9);
+      right: pxToRem(9);
+      bottom: pxToRem(6);
+      left: pxToRem(10);
     }
   }
 }

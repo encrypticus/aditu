@@ -31,7 +31,7 @@
   }
 
   &__price {
-    margin-left: 69px;
+    margin-left: pxToRem(69);
   }
 
   &__footer {
@@ -42,6 +42,6 @@
 
   &__button {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: pxToRem(15);
   }
 }

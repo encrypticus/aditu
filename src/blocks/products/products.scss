@@ -3,6 +3,14 @@
   &__card-wrapper {
     width: pxToPercent(873, 1280);
     margin: auto;
+
+    @media (max-width: 1140px) {
+      width: 87%;
+    }
+
+    @include for-middle-phone-only() {
+      width: 95%;
+    }
   }
 
   &__card-wrapper-inner {
@@ -11,6 +19,14 @@
     justify-content: space-between;
     width: 100%;
     margin-left: pxToRem(-13);
+
+    @media (max-width: 1140px) {
+      margin-left: 0;
+    }
+
+    @include for-phone-only() {
+      justify-content: center;
+    }
   }
 
   &__title {
