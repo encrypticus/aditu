@@ -1,3 +1,4 @@
+/* eslint-disable */
 const path = require('path');
 const merge = require('webpack-merge'); // объединяет массивы и объекты конфигураций из нескольких файлов-модулей
 const pug = require('./webpack/loaders/pug'); // модуль обработки pug-файлов
@@ -15,6 +16,8 @@ const css = require('./webpack/loaders/css'); // модуль обработки
 const image = require('./webpack/loaders/image'); // модуль обработки файлов изображений
 const video = require('./webpack/loaders/video'); // модуль обработки видеофайлов
 const copyWebpackPlugin = require('./webpack/plugins/copyWebpackPlugin'); // плагин копирования файлов
+const hammer = require('./webpack/plugins/hammer'); // плагин добавления jquery
+const jquery = require('./webpack/plugins/jquery'); // плагин добавления hammerjs
 
 // функция вторым аргументом принимает args.mode от прописанных в package.json скриптов: args.mode = development или args.mode = production
 module.exports = (env, args) => {
@@ -60,6 +63,7 @@ module.exports = (env, args) => {
       copyWebpackPlugin([{from: 'src/favicons', to: 'favicons'}]),
       htmlWebpackPlugin({filename: 'index.html', template: 'src/pages/index.pug', inject: false}),
       styleLintPlugin(),
+      hammer(),
       env.browserSync === 'open' ? browserSync() : {}
   );
 

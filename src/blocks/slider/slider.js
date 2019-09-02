@@ -55,8 +55,6 @@ const moveToLeft = function moveToLeft() {
 
   // if (position <= -199.8046875) position = -199.8046875;
   slides.style.marginLeft = position + '%';
-
-  console.log(position);
 };
 
 const moveToRight = function moveToRight() {
@@ -65,8 +63,6 @@ const moveToRight = function moveToRight() {
 
   if (position >= 0) position = 0;
   slides.style.marginLeft = position + '%';
-
-  console.log(position);
 };
 
 const resetLeftMargin = function resetLeftMargin() {
@@ -75,7 +71,7 @@ const resetLeftMargin = function resetLeftMargin() {
 };
 
 window.addEventListener('resize', resetLeftMargin);
-buttonLeft.addEventListener('click', moveToLeft);
-buttonRight.addEventListener('click', moveToRight);
+buttonLeft.addEventListener('click', moveToRight);
+buttonRight.addEventListener('click', moveToLeft);
 touchEventDispatcher.on('swipeleft', moveToLeft);
 touchEventDispatcher.on('swiperight', moveToRight);
