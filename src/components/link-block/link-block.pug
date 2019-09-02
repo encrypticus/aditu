@@ -1,0 +1,9 @@
+mixin link-block(text = "title")
+  include ./link-set
+
+  .link-block
+    h3.link-block__title= text
+    ul.link-block__links
+      each link in links
+        li.link-block__item
+          a.link-block__link(href="/")= link

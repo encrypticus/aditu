@@ -1,0 +1,36 @@
+.link-block {
+  @include for-tablet-landscape-down {
+    margin-bottom: pxToRem(50);
+  }
+
+  &__title {
+    font-size: pxToRem(27);
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    line-height: pxToRem(25);
+    font-weight: 400;
+    margin: {
+      top: 0;
+      bottom: pxToRem(14);
+    }
+  }
+
+  &__links {
+    margin: 0;
+    margin-left: pxToRem(5);
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    font-size: pxToRem(15);
+    font-family: 'Open Sans';
+    line-height: pxToRem(28);
+    color: $color-primary;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: $gray--lightest;
+    }
+  }
+}
