@@ -1,7 +1,7 @@
 {
-  "name": "uikit",
+  "name": "aditu",
   "version": "1.0.0",
-  "description": "",
+  "description": "Шаблон магазина одежды в рамках самообразования",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --env.browserSync=open",
@@ -9,8 +9,7 @@
     "server": "webpack-dev-server --mode development --open --env.browserSync=doNotOpen",
     "deploy": "gh-pages -d dist -r https://github.com/encrypticus/aditu.git -n encrypticus"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Alexandr Timofeev aka encrypticus",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.5.0",
